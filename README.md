@@ -11,7 +11,7 @@
 ## 회로 결선 방법
 
 아래는 프로젝트 회로 연결 방법에 대한 설명입니다. 결선도는 `circuit.png`에서 확인할 수 있습니다.
-![alt text](circuit.png)
+![결선 개념도](circuit.png)
 
 
 ### 주요 결선
@@ -37,6 +37,10 @@
 2. PlatformIO 또는 Arduino IDE를 사용하여 코드를 업로드합니다.
 3. 버튼을 누르면 릴레이가 활성화되고, 이를 통해 펌프가 3초 동안 작동합니다.
 
+## 실제 진행
+버튼 누를 경우 3초간 물 공급 진행 
+https://github.com/slicequeue/poc-uno-control-water-pump-with-relay-btn/blob/main/circuit_real.mp4
+<video controls src="circuit_real.mp4" title="실제 기능 테스트 진행"></video>
 
 
 ## 테스트 환경
