@@ -10,6 +10,8 @@
 #define RELAY_ACTIVE LOW    // 릴레이 활성화 신호 정의
 #define RELAY_DEACTIVE HIGH // 릴레이 비활성화 신호 정의
 
+unsigned long RELAY_DRUATION = 3 * 1000; // 릴레이 활성화 시간
+
 void setup() {
   Serial.begin(9600);
   pinMode(RELAY_PIN, OUTPUT);
@@ -25,7 +27,7 @@ void loop() {
     Serial.println("Button pushed! Relay ON!");
     // 3초 릴레이 가동 후 종료
     digitalWrite(RELAY_PIN, RELAY_ACTIVE);
-    delay(3000);
+    delay(RELAY_DRUATION);
   }
   delay(1); // 버튼 입력을 감지하는 폴링 방식에서는 루프가 너무 빨리 도는 것이 시스템 자원 낭비 delay(1);으로 CPU를 쉬게 하는 것이 더 효율적
 }
